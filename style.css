@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
 }
-.upperDiv{
+.header-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,11 +29,11 @@
     width: 100%;
     padding: 40px 0px 200px;
 }
-.upperDiv h1{
+.header-section h1{
     line-height: 130%;
     font-size: 48px;
 }
-.upperDiv p{
+.header-section p{
     line-height: 40px;
     font-size: 24px;
 }
@@ -68,7 +68,7 @@
     font-size: 18px;
 }
 .subscriptionModal .subscriptionPrice button{
-    min-width: 250px;
+    min-width: 282px;
     height: 51px;
     background-color: #805AD5;
     color: #F7FAFC;
@@ -85,6 +85,7 @@
 }
 .subscriptionModal .subscriptionText p#header{
     padding-bottom: 20px;
+    max-width: 646px;
 }
 .subscriptionModal .subscriptionText p{
     font-size: 18px;
@@ -102,21 +103,23 @@
     max-height: 20px;
 }
 
-.lowerDiv{
+.offer-section{
     display: flex;
     justify-content: center;
     /* border: 2px solid green; */
 }
-.lowerDiv .offers{
+.offer-section .offers{
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
-.lowerDiv .offers img{
+.offer-section .offers img{
     width: 40px;
     height: 30px;
+    align-self: center;
+    
 }
-.lowerDiv .offers span{
+.offer-section .offers span{
     font-size: 14px;
     padding-left: 15px;
     padding-top: 5px;
@@ -126,11 +129,11 @@
 }
 /* Tablet View */
 @media only screen and (max-width: 860px){
-    .upperDiv h1{
+    .header-section h1{
         line-height: 130%;
         font-size: 30px;
     }
-    .upperDiv p{
+    .header-section p{
         font-size: 18px;
     }
     .subscriptionModal .subscriptionText p{
@@ -141,13 +144,18 @@
 /* Mobile View */
 @media only screen and (max-width: 650px){
     .container{
-        padding-bottom: 50px;
+        padding-bottom: 10px;
     }
-    .upperDiv{
+    .header-section p{
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .header-section{
         padding: 40px 10px 200px;
     }
-    .upperDiv p{
+    .header-section p{
         line-height: 30px;
+        
     }
     .subscriptionModal{
         flex-direction: column;
@@ -156,16 +164,19 @@
         font-size: 48px;
         font-weight: 700;
     }
+    .subscriptionModal .subscriptionText{
+        padding: 20px 15px;
+    }
     .subscriptionModal .subscriptionText .premiumOffer p{
        max-width: 340px;
     }
-    .lowerDiv{
+    .offer-section{
         flex-direction: column;
     }
-    .lowerDiv .offers{
+    .offer-section .offers{
         justify-content: flex-start;
     }
-    .lowerDiv .offers span{
+    .offer-section .offers span{
         max-width: 376px;
     }
 }
